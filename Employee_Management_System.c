@@ -11,7 +11,7 @@ typedef struct Employee {
 
 Employee* head = NULL;
 
-// Function to check if ID already exists
+
 int id_exists(int id) {
     Employee* temp = head;
     while (temp) {
@@ -22,7 +22,7 @@ int id_exists(int id) {
     return 0;
 }
 
-// Add Employee
+
 void add_employee() {
     Employee* new_emp = (Employee*)malloc(sizeof(Employee));
     printf("Enter Employee ID: ");
@@ -45,7 +45,7 @@ void add_employee() {
     printf("Employee added successfully!\n");
 }
 
-// Display all Employees
+
 void display_employees() {
     if (!head) {
         printf("No employee records found.\n");
@@ -59,7 +59,7 @@ void display_employees() {
     }
 }
 
-// Update Employee
+
 void update_employee() {
     int id;
     printf("Enter Employee ID to update: ");
@@ -80,7 +80,7 @@ void update_employee() {
     printf("Employee not found.\n");
 }
 
-// Delete Employee
+
 void delete_employee() {
     int id;
     printf("Enter Employee ID to delete: ");
@@ -104,7 +104,7 @@ void delete_employee() {
     printf("Employee not found.\n");
 }
 
-// Menu
+
 void menu() {
     int choice;
     while (1) {
